@@ -1,13 +1,13 @@
 {
-  "main.css": "/reactapidenemeprojesi/static/css/main.374ea1b1.chunk.css",
-  "main.js": "/reactapidenemeprojesi/static/js/main.d16d665b.chunk.js",
-  "main.js.map": "/reactapidenemeprojesi/static/js/main.d16d665b.chunk.js.map",
-  "runtime~main.js": "/reactapidenemeprojesi/static/js/runtime~main.c4879b3f.js",
-  "runtime~main.js.map": "/reactapidenemeprojesi/static/js/runtime~main.c4879b3f.js.map",
-  "static/js/2.73b4bf5e.chunk.js": "/reactapidenemeprojesi/static/js/2.73b4bf5e.chunk.js",
-  "static/js/2.73b4bf5e.chunk.js.map": "/reactapidenemeprojesi/static/js/2.73b4bf5e.chunk.js.map",
-  "index.html": "/reactapidenemeprojesi/index.html",
-  "precache-manifest.6039a6c5041e12c26a4c39ba07a8ac5f.js": "/reactapidenemeprojesi/precache-manifest.6039a6c5041e12c26a4c39ba07a8ac5f.js",
-  "service-worker.js": "/reactapidenemeprojesi/service-worker.js",
-  "static/css/main.374ea1b1.chunk.css.map": "/reactapidenemeprojesi/static/css/main.374ea1b1.chunk.css.map"
+  "main.css": "/react/static/css/main.374ea1b1.chunk.css",
+  "main.js": "/react/static/js/main.d16d665b.chunk.js",
+  "main.js.map": "/react/static/js/main.d16d665b.chunk.js.map",
+  "runtime~main.js": "/react/static/js/runtime~main.bb50a20d.js",
+  "runtime~main.js.map": "/react/static/js/runtime~main.bb50a20d.js.map",
+  "static/js/2.73b4bf5e.chunk.js": "/react/static/js/2.73b4bf5e.chunk.js",
+  "static/js/2.73b4bf5e.chunk.js.map": "/react/static/js/2.73b4bf5e.chunk.js.map",
+  "index.html": "/react/index.html",
+  "precache-manifest.31d4d5596ce5068c6af1ae33b57e2e0c.js": "/react/precache-manifest.31d4d5596ce5068c6af1ae33b57e2e0c.js",
+  "service-worker.js": "/react/service-worker.js",
+  "static/css/main.374ea1b1.chunk.css.map": "/react/static/css/main.374ea1b1.chunk.css.map"
 }
