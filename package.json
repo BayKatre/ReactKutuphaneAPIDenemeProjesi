@@ -2,6 +2,7 @@
   "name": "reactkutuphane",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://baykatre.github.io/reactapidenemeprojesi",
   "dependencies": {
     "@types/history": "^4.7.2",
     "@types/jest": "24.0.11",
@@ -11,6 +12,7 @@
     "@types/react-router": "^4.4.5",
     "@types/react-router-dom": "^4.3.1",
     "bootstrap": "^4.3.1",
+    "gh-pages": "^2.0.1",
     "jquery": "^3.3.1",
     "popper.js": "^1.15.0",
     "react": "^16.8.6",
@@ -25,7 +27,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
