@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/ReactKutuphaneAPIDenemeProjesi/precache-manifest.54d6a7768e9d6fc2eb4d19b297d6fcbc.js"
+  "/ReactKutuphaneAPIDenemeProjesi/precache-manifest.6e3460e69570aeea9e942c7d2c7c8bc1.js"
 );
 
 workbox.clientsClaim();
