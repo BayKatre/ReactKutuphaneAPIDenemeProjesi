@@ -1,12 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import AnaSayfa from './AnaSayfa';
+import Detay from './Detay';
+import Olustur from './Olustur';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import { Router, Route } from 'react-router';
+import history from './history';
+import './sb-admin-2.css';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(
+  <Router history={history}>
+    <Route exact path="/" component={AnaSayfa}/>
+    <Route path="/detail/:id" component={Detay}/>
+    <Route path="/create" component={Olustur}/>
+  </Router>,
+  document.getElementById('root')
+);
