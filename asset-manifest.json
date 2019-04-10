@@ -1,13 +1,13 @@
 {
-  "main.css": "/react/static/css/main.374ea1b1.chunk.css",
-  "main.js": "/react/static/js/main.d16d665b.chunk.js",
-  "main.js.map": "/react/static/js/main.d16d665b.chunk.js.map",
-  "runtime~main.js": "/react/static/js/runtime~main.bb50a20d.js",
-  "runtime~main.js.map": "/react/static/js/runtime~main.bb50a20d.js.map",
-  "static/js/2.73b4bf5e.chunk.js": "/react/static/js/2.73b4bf5e.chunk.js",
-  "static/js/2.73b4bf5e.chunk.js.map": "/react/static/js/2.73b4bf5e.chunk.js.map",
-  "index.html": "/react/index.html",
-  "precache-manifest.31d4d5596ce5068c6af1ae33b57e2e0c.js": "/react/precache-manifest.31d4d5596ce5068c6af1ae33b57e2e0c.js",
-  "service-worker.js": "/react/service-worker.js",
-  "static/css/main.374ea1b1.chunk.css.map": "/react/static/css/main.374ea1b1.chunk.css.map"
+  "main.css": "/ReactKutuphaneAPIDenemeProjesi/static/css/main.374ea1b1.chunk.css",
+  "main.js": "/ReactKutuphaneAPIDenemeProjesi/static/js/main.d16d665b.chunk.js",
+  "main.js.map": "/ReactKutuphaneAPIDenemeProjesi/static/js/main.d16d665b.chunk.js.map",
+  "runtime~main.js": "/ReactKutuphaneAPIDenemeProjesi/static/js/runtime~main.53eefa50.js",
+  "runtime~main.js.map": "/ReactKutuphaneAPIDenemeProjesi/static/js/runtime~main.53eefa50.js.map",
+  "static/js/2.73b4bf5e.chunk.js": "/ReactKutuphaneAPIDenemeProjesi/static/js/2.73b4bf5e.chunk.js",
+  "static/js/2.73b4bf5e.chunk.js.map": "/ReactKutuphaneAPIDenemeProjesi/static/js/2.73b4bf5e.chunk.js.map",
+  "index.html": "/ReactKutuphaneAPIDenemeProjesi/index.html",
+  "precache-manifest.54d6a7768e9d6fc2eb4d19b297d6fcbc.js": "/ReactKutuphaneAPIDenemeProjesi/precache-manifest.54d6a7768e9d6fc2eb4d19b297d6fcbc.js",
+  "service-worker.js": "/ReactKutuphaneAPIDenemeProjesi/service-worker.js",
+  "static/css/main.374ea1b1.chunk.css.map": "/ReactKutuphaneAPIDenemeProjesi/static/css/main.374ea1b1.chunk.css.map"
 }
