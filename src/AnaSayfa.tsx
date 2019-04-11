@@ -64,8 +64,7 @@ const KitapList = (props: any) => {
         const aramaIDList= Object.entries(yeniList).map((kit: any, index) => {
             return kit[1].id
         })
-        console.log(aramaIDList)
-        console.log(yeniList)
+ 
         if(props.sayfaid) {
              const list = Object.values(yeniList).filter((kit: any, index) => {
                 if((props.sayfaid-1)*5<index+1 && index+1<=props.sayfaid*5){
@@ -73,7 +72,7 @@ const KitapList = (props: any) => {
                 }
                 else return false
                 })
-            console.log(list)
+          
             yeniList=list
         }
         const kitapList= Object.entries(yeniList).map((kit: any, index) => {
@@ -108,7 +107,7 @@ const KitapList = (props: any) => {
                 }
                 else return false
                 })
-            console.log(list)
+         
             yeniList=list
         }
         const kitapList= Object.entries(yeniList).map((kit: any, index) => {
@@ -202,7 +201,7 @@ class Input extends React.Component<IProps, IState>{
                     })
                 newList=kitapList
                 if(!newList.length) newList = yokList
-                console.log(newList)
+       
             }else if(this.props.kitaplar && this.props.parametreid ==3){
                 currentList = this.props.yayinevleri;
                 newList = currentList.filter((item: any) => {
@@ -222,7 +221,7 @@ class Input extends React.Component<IProps, IState>{
                     })
                 newList=kitapList
                 if(!newList.length) newList = yokList
-                console.log(newList)
+        
             } else newList = yokList;
             if(newList.length>5){
                 let sayfa=[]
@@ -242,18 +241,18 @@ class Input extends React.Component<IProps, IState>{
             }else this.props.saveState("sayfaSayisi", ["1"])
         }
         
-        console.log(newList)
+    
         this.props.saveState("yeniKitap", newList);
     }
     handleChangeForParams(e: any){
         if (e.target.value == "1") 
-            {this.props.saveState("parametreid", 1);console.log(this.props.parametreid)}
+            {this.props.saveState("parametreid", 1)}
         else if (e.target.value == "2") 
-            {this.props.saveState("parametreid", 2);console.log(this.props.parametreid)}
+            {this.props.saveState("parametreid", 2)}
         else if (e.target.value == "3") 
-            {this.props.saveState("parametreid", 3);console.log(this.props.parametreid)}
+            {this.props.saveState("parametreid", 3)}
         else
-            {this.props.saveState("parametreid", 0);console.log(this.props.parametreid)}
+            {this.props.saveState("parametreid", 0)}
     }
     render(){
         return( 

@@ -1,22 +1,12 @@
 import React, { Component } from 'react';
-import './App.css';
 import {Link} from "react-router-dom"
 import { any } from 'prop-types';
-import { render } from 'react-dom';
-interface YProps {
-    match: any
-}
-interface YState {
-    yayinevleri: any
-    yazarlar: any
-    kitaplar: any
-    key: any
-}
 interface IProps {
     type: any
     placeholder: any
     saveState: any
     name: any
+    durumbilgisi: any
 }
 interface IState {
     value: any
@@ -24,6 +14,7 @@ interface IState {
 interface YazProps {
     yazarlar: any
     saveState: any
+    durumbilgisi: any
 }
 interface YazState {
     value: any
@@ -31,16 +22,10 @@ interface YazState {
 interface YayProps {
     yayinevleri: any
     saveState: any
+    durumbilgisi: any
 }
 interface YayState {
     value: any
-}
-interface SProps {
-    value: any
-    type: any
-    
-}
-interface SState {
 }
 class Input extends Component<IProps, IState>{
     constructor(props: any){
@@ -55,9 +40,12 @@ class Input extends Component<IProps, IState>{
             value: event.target.value
         })
         this.props.saveState(this.props.name, event.target.value);
-        console.log(this.state.value)
     }
     render(){
+        if(this.props.durumbilgisi !=="" && this.state.value!==""){
+            this.setState({value: ""})
+            this.props.saveState(this.props.name, "");
+        }
         return(
                 <input className="form-control" type={this.props.type} placeholder={this.props.placeholder} value={this.state.value} onChange={this.handleChange}/>
             );
@@ -80,10 +68,9 @@ class Yazar extends Component<YazProps, YazState>{
     render(){
         const yazarList = Object.entries(this.props.yazarlar).map((yaz: any, index) => {
             return(
-                <option value={yaz[1].id}>{yaz[1].yazarAdi}</option>
+                <option key={index} value={yaz[1].id}>{yaz[1].yazarAdi}</option>
             )
         })
-        console.log(this.state.value)
         return(
             <select onChange={this.handleChange} className="form-control">
                 <option value="">Yazar Seçin</option>
@@ -109,10 +96,9 @@ class Yayinevi extends Component<YayProps, YayState>{
     render(){
         const yayineviList = Object.entries(this.props.yayinevleri).map((yay: any, index) => {
             return(
-                <option value={yay[1].id}>{yay[1].yayineviAdi}</option>
+                <option key={index} value={yay[1].id}>{yay[1].yayineviAdi}</option>
             )
         })
-        console.log(this.state.value)
         return(
             <select onChange={this.handleChange} className="form-control">
                 <option value="">Yayinevi Seçin</option>
@@ -129,7 +115,8 @@ class Olustur extends Component<{},any> {
             yazarlar: any,
             kitaplar: any,
             key: any,
-            durumbilgisi: any
+            durumbilgisi: "",
+            durumid: 0
         }
         this.saveState = this.saveState.bind(this);
     }
@@ -173,6 +160,7 @@ class Olustur extends Component<{},any> {
             aciklama: kitapaciklamasi,
             stokMiktari: stokdurumu
         }
+        if(kitapadi!==""&&kitapaciklamasi!==""&&stokdurumu!==""&&yazarid!==""&&yayineviid!==""){
         fetch('https://5ca0c6abc1b53400149ac999.mockapi.io/api/v1/kitap/', {
             method: 'post',
             headers: {
@@ -185,14 +173,11 @@ class Olustur extends Component<{},any> {
              this.setState({durumbilgisi : "Kitap Eklendi!"})
            }).catch((error) => {
             console.error(error);
-            });
-           console.log(veri);console.log(JSON.stringify(veri))
-        return(
-            <div><h2>Kitap Kaydedildi!</h2></div>
-        )
+            this.setState({durumbilgisi : "Kitap Eklenemedi!"})
+            })
+        }else this.setState({durumbilgisi : "Kitap Bilgilerini Boş Geçemezsiniz!"})
     }
   render() {
-      console.log(this.state)
     return (
         <div>
             <br/><br/>
@@ -206,16 +191,16 @@ class Olustur extends Component<{},any> {
                     <div className="text-xs font-weight-bold text-primary text-uppercase mb-1">Yeni Kitap</div><br/>
                     <form className="user">
                     <div className="form-group">
-                        <Input type="text" name="kitapadi" placeholder="Kitap Adı" saveState={this.saveState}/>
+                        <Input type="text" name="kitapadi" placeholder="Kitap Adı" saveState={this.saveState} durumbilgisi={this.state.durumbilgisi}/>
                     </div>
                     <div className="form-group">
-                        <Input type="text" name="kitapaciklamasi" placeholder="Kitap Açıklaması" saveState={this.saveState}/>
+                        <Input type="text" name="kitapaciklamasi" placeholder="Kitap Açıklaması" saveState={this.saveState} durumbilgisi={this.state.durumbilgisi}/>
                     </div><div className="form-group">
-                        <Input type="text" name="stokdurumu" placeholder="Stok Durumu" saveState={this.saveState}/>
+                        <Input type="text" name="stokdurumu" placeholder="Stok Durumu" saveState={this.saveState} durumbilgisi={this.state.durumbilgisi}/>
                     </div><div className="form-group">
-                        <Yazar yazarlar={this.state.yazarlar} saveState={this.saveState}/>
+                        <Yazar yazarlar={this.state.yazarlar} saveState={this.saveState} durumbilgisi={this.state.durumbilgisi}/>
                     </div><div className="form-group">
-                        <Yayinevi yayinevleri={this.state.yayinevleri} saveState={this.saveState}/>
+                        <Yayinevi yayinevleri={this.state.yayinevleri} saveState={this.saveState} durumbilgisi={this.state.durumbilgisi}/>
                     </div><div className="form-group">
                         <button className="btn btn-primary btn-user btn-block" onClick={() => this.veriKaydet(this.state.kitapadi, this.state.kitapaciklamasi, this.state.stokdurumu, this.state.yazarid, this.state.yayineviid)}>Kaydet</button>
                     </div>

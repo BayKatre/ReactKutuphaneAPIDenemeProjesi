@@ -2,7 +2,7 @@
   "name": "reactkutuphane",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://baykatre.github.io/reactapidenemeprojesi",
+  "homepage": "https://baykatre.github.io/ReactKutuphaneAPIDenemeProjesi/",
   "dependencies": {
     "@types/history": "^4.7.2",
     "@types/jest": "24.0.11",
