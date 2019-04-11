@@ -1,10 +1,13 @@
 # React Kutuphane API Deneme Projesi
+
 Mock API'den veri çekerek işlemler yapmamıza yarayan bir React-TypeScript Projesi
 
 ## Başlarken
+
 İlk defa React öğrenmeye başladığım bu projede REST bir API ile nasıl dans edilir bunları öğrenmiş oldum. Aslında bir staj başvurum sonucu bana gelen proje olsa da hem yaparken keyif aldığım hem de çok şey öğrendiğmi bir proje oldu. :)
 
 ## Proje Hakkında
+
 https://baykatre.github.io/ReactKutuphaneAPIDenemeProjesi/ linkinden erişebileceğiniz proje ana sayfasında kitap, yazar ve yayınevi bilgilerimiz mockapi üzerinde tutulan bağımsız üç tablodan çekilerek getiriliyor. Sadece kitap tablosunda tanımlamak için yazarID ve yayineviID değişkenleri bulunuyor. 
 
 Kitaplarımız beşerli listeler halinde size gösteriliyor üst ortada kitap, yazar veya yayınevi parametreleri ile arama yapabileceğimiz bir arama panelimiz onun hemen yanında yeni kitap oluşturmak için butonumuz, sağ alt köşede sayfa geçiş butonlarımız ve sol alt kısımda da sayfa bilgilendirme metnimiz bulunuyor.
