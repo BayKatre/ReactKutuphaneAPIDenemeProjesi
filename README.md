@@ -29,6 +29,6 @@ Kitap Ekle butonumuza bastığımızda gelen sayfada yeni kitap bilgilerini gire
 
 ** Burda gördüğüm bir bug var uygulamada. İlk kez "Kitap Ekle" butonuna basıp kitap eklemeye çalışında sayfa refresh oluyor fakat ikinci denemede ekleniyor. Çözemediğim ilginç bir problem. :)
 
-![screenshot-desktop](https://user-images.githubusercontent.com/26842312/55956215-192b4400-5c6c-11e9-89e1-f059b6669397.png)
-
 ![screenshot-desktop](https://user-images.githubusercontent.com/26842312/55956207-14669000-5c6c-11e9-907d-230d08114978.png)
+
+![screenshot-desktop](https://user-images.githubusercontent.com/26842312/55956215-192b4400-5c6c-11e9-89e1-f059b6669397.png)
