@@ -15,7 +15,7 @@ Kitaplarımız beşerli listeler halinde size gösteriliyor üst ortada kitap, y
 
 Canlı olarak güncellenen arama paneline bağlı olan listemiz arama sonuçlarına göre sayfa numaralarını da düzenleyip yine arama sonuçlarını da beşer beşer listelemeye devam ediyor. Hemen arama panelinin yanındaki seçeneklerden varsayılan olarak kitap araması için ayarlı olan parametreyi yazar veya yayınevi aramak için değiştirebilirsiniz. :)
 
-![screenshot-desktop](https://user-images.githubusercontent.com/26842312/55956207-14669000-5c6c-11e9-907d-230d08114978.png)
+![screenshot-desktop](https://user-images.githubusercontent.com/26842312/55956225-1e888e80-5c6c-11e9-940d-d4a0afe2291d.png)
 
 ## Detay
 
@@ -31,4 +31,4 @@ Kitap Ekle butonumuza bastığımızda gelen sayfada yeni kitap bilgilerini gire
 
 ![screenshot-desktop](https://user-images.githubusercontent.com/26842312/55956215-192b4400-5c6c-11e9-89e1-f059b6669397.png)
 
-![screenshot-desktop](https://user-images.githubusercontent.com/26842312/55956225-1e888e80-5c6c-11e9-940d-d4a0afe2291d.png)
+![screenshot-desktop](https://user-images.githubusercontent.com/26842312/55956207-14669000-5c6c-11e9-907d-230d08114978.png)
