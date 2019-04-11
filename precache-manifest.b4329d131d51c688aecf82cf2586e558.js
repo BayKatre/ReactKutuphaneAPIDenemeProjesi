@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "262de73faddd05b22d0f",
+    "revision": "80bfd416e73ea8adfa67",
     "url": "/ReactKutuphaneAPIDenemeProjesi/static/css/main.3a73cd40.chunk.css"
   },
   {
-    "revision": "262de73faddd05b22d0f",
-    "url": "/ReactKutuphaneAPIDenemeProjesi/static/js/main.a82b2ac9.chunk.js"
+    "revision": "80bfd416e73ea8adfa67",
+    "url": "/ReactKutuphaneAPIDenemeProjesi/static/js/main.aee02cb6.chunk.js"
   },
   {
     "revision": "3a6a46e089c8f5be0ee1",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/ReactKutuphaneAPIDenemeProjesi/static/js/2.8169f9bc.chunk.js"
   },
   {
-    "revision": "4f9643f1769fdb91f8f3a2133b34f618",
+    "revision": "667690234fe11c6356f7ca676d5b7e91",
     "url": "/ReactKutuphaneAPIDenemeProjesi/index.html"
   }
 ];
