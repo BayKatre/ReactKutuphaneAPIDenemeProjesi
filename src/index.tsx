@@ -6,7 +6,7 @@ import Olustur from './Olustur';
 
 import { Router, Route } from 'react-router';
 import history from './history';
-import './sb-admin-2.css';
+import 'https://cdn.jsdelivr.net/npm/startbootstrap-sb-admin-2@4.0.7/css/sb-admin-2.css';
 
 ReactDOM.render(
   <Router history={history}>
